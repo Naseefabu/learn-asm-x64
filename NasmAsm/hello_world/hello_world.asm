@@ -15,3 +15,7 @@ _main:
 	mov rdi, 0
 	syscall
 
+	movq $60, %rax
+	movq $3, %rdi
+	syscall
+
