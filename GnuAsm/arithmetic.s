@@ -15,6 +15,7 @@ _start:
     # rdi(5) * rax(2) = 10 == rax 
     mulq %rdi
     
+    
     # mov 10 to rdi for the exit status
     movq %rax, %rdi
 
