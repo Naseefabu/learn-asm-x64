@@ -53,4 +53,3 @@ instruction pointer.
 means).
 3. Advance the instruction pointer to the next instruction.5
 4. Perform the operation indicated by the instruction.
-
