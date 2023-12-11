@@ -1,5 +1,6 @@
 *.o
-arithmetic
-exit
 binaryexit
 valuesize
+branching
+exit
+artithmetic

@@ -14,6 +14,7 @@ _start:
     movb $0, %bh
 
     # move the exit status as the sum of the above
+    # echo $status to print the result
     movq %rbx, %rdi
 
     # exit system call
