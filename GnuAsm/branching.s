@@ -16,6 +16,7 @@ _start:
     # setting exit status as 7
     movq $7, %rdi
     # jump to instruction memory address nextplace
+    # altering the instruction pointer by us to jump to nextplace
     jmp nextplace
     # this instruction will be skipped
     # setting exit status as 8
