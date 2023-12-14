@@ -53,7 +53,7 @@ mainloop:
     # that means we hit the 0 exponent then we no longer need to multiply it with base
     jz exitloop
 
-    # multiply the base by itself and store the result inside the rax register
+    # multiply the base by rax register (1) store the result inside the rax register
     mulq %rbx
     
     # decrease the number inside the rcx register by one
