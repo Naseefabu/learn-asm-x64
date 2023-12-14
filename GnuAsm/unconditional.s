@@ -47,9 +47,12 @@ mainloop:
     # doing the arithmetic so to set the %eflags register (by CPU) later we use that to jump to the exit loop
     # doing this arithmetic means CPU will set the %eflags register
     # what specific bit we are interested in the zero flag register  
+    # The program adds 0 to %rcx. Why would we want to do this?
+    # we need to know whether rcx (our exponent) is zero or not hence by doing this arithmetic
+    # this will set zero flag in %eflags register to 1 if the arithmetic result is zero
     addq $0, %rcx
 
-    # jump if zero flat register is set to zero because of above operation
+    # jump if zero flag in %eflags register is set to 1 because of above operation
     # that means we hit the 0 exponent then we no longer need to multiply it with base
     jz exitloop
 
